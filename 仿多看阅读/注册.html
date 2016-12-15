@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+       .box {
+           width: 385px;
+           height: 313px;
+           box-shadow: 5px 5px #FAF9F6;
+           margin: 100px auto;
+       }
+        .box h3 {
+            font: 500 14px/28px "Microsoft YaHei";
+            background-color: #758b71;
+            color: green;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .box .inp span{
+            display: inline-block;
+            width: 100px;
+            height: 36px;
+            font: 12px/36px "Microsoft YaHei";
+            text-align: right;
+            margin-right: 20px;
+            text-shadow: 5px 5px 5px;
+        }
+        .box .inp input {
+            width: 200px;
+            height: 36px;
+        }
+        .box .yanz input {
+            width: 100px;
+        }
+        .box .yanz #idenCode {
+            display: inline-block;
+            width: 100px;
+            height: 36px;
+            background-color: #ff6604;
+            text-align: center;
+            font: 400 16px/36px "Microsoft YaHei";
+            color: white;
+        }
+        .box .tiX {
+            color: red;
+            height: 18px;
+            font:400 12px/18px "Microsoft YaHei";
+            /*width: 100%;*/
+            text-align: left;
+            margin-left: 120px;
+            /*display: none;*/
+        }
+       .box>button {
+           width: 200px;
+           height: 30px;
+           background-color: #ff6604;
+           border: 1px solid #ff6604;
+           outline: none;
+           margin-left: 100px;
+       }
+        .box>button a {
+            color: black;
+        }
+    </style>
+    <script src="jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div class=" login">
+    <div class="box">
+        <h3>登陆/注册</h3>
+        <p class="inp"><span>帐号</span><input type="text" placeholder="请输入您的账号"/></p>
+        <p class="tiX"></p>
+        <p class="inp"><span>密码</span><input type="password" placeholder="请输入密码"/></p>
+        <p class="tiX"></p>
+        <p class="inp yanz"><span>验证码</span><input type="text" placeholder="请输入验证码"/> <span id="idenCode"></span></p>
+        <p class="tiX"></p><br/>
+        <button>立即登录</button>
+    </div>
+</div>
+<script>
+    var zhang = false,miMa = false,yan = false;
+    var inpInput = $(".inp input");
+    var rcss = [];
+    var ranNum = [];
+    console.log(Math.random()*2);
+    function suJi() {
+        for (var i=0;i<6;i++) {
+            if (Math.random()*2>=1) {
+                rcss[i] = 97
+            }else {
+                rcss[i] = 65
+            }
+            ranNum[i] = Math.ceil(Math.random() * 25)
+        }
+        $("#idenCode").html(String.fromCharCode(rcss[0]+ranNum[0])+String.fromCharCode(rcss[1]+ranNum[1])+String.fromCharCode(rcss[2]+ranNum[2])+String.fromCharCode(rcss[3]+ranNum[3])+String.fromCharCode(rcss[4]+ranNum[4])+String.fromCharCode(rcss[5]+ranNum[5]));
+        console.log($("#idenCode").html())
+    }
+    suJi();
+    $("#idenCode").click(function () {
+        suJi();
+    });
+    inpInput.eq(0).blur(function () {
+        if ($(".inp input").eq(0).val() == "") {
+            $(".tiX").eq(0).html("账号不能为空");
+        }else {
+            $(".tiX").eq(0).html("");
+            zhang = true;
+        }
+
+    });
+    inpInput.eq(1).blur(function () {
+        if ($(".inp input").eq(1).val().length <= 6) {
+            $(".tiX").eq(1).html("密码为6-12位的数字、字母或特殊字符！");
+        }else {
+            $(".tiX").eq(1).html("");
+            miMa = true
+        }
+    });
+    inpInput.eq(2).blur(function () {
+        if ($(".inp input").eq(2).val() != $("#idenCode").html()) {
+            $(".tiX").eq(2).html("输入的验证码有误");
+        }else {
+            $(".tiX").eq(2).html("");
+            yan = true
+        }
+    });
+    $("button").click(function () {
+        if (yan && miMa && zhang) {
+            window.open("首页.html");
+            console.log(1)
+        }
+    })
+</script>
+</body>
+</html>

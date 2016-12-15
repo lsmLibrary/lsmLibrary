@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>幸运大转盘-jQuery实现的抽奖程序</title>
+    <style type="text/css">
+        html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, code, em, img, small, strong, sub, sup, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .nav {
+            background-color: #e6e6e6;
+            border-bottom: 1px solid #cccccc;
+            overflow: hidden;
+            padding: 0 180px;
+        }
+
+        .nav li {
+            float: left;
+            width: 100px;
+            height: 30px;
+            font: 900 16px/30px "";
+            text-align: center;
+
+            border-right: 1px solid #cccccc;
+        }
+
+        .nav li a {
+            color: #ffffff;
+        }
+
+        .nav li:hover a {
+            color: red;
+        }
+
+        #main {
+            width: 980px;
+            min-height: 600px;
+            margin: 30px auto 0 auto;
+            border: 1px solid #d3d3d3;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        h2.top_title {
+            margin: 4px 20px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #d3d3d3;
+            font-size: 18px;
+            color: #a84c10;
+        }
+
+        .top_title span {
+            margin-left: 54%;
+            color: #007bc4;
+        }
+
+        .demo {
+            width: 417px;
+            height: 417px;
+            position: relative;
+            margin: 50px auto
+        }
+
+        #disk {
+            width: 417px;
+            height: 417px;
+            background: url(disk.jpg) no-repeat
+        }
+
+        #start {
+            width: 163px;
+            height: 320px;
+            position: absolute;
+            top: 46px;
+            left: 130px;
+        }
+
+        #start img {
+            cursor: pointer
+        }
+
+        .btn {
+            width: 100px;
+            height: 30px;
+            margin-left: 30px;
+            background-color: #fff;
+            box-shadow: 3px 3px 5px #fff;
+        }
+
+        .prize-box {
+            margin-left: 50%;
+            color: #49d45e;
+        }
+
+        .prize {
+            color: darkmagenta;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="../抽检系统js版/index.html">js版</a></li>
+        <li><a href="../抽奖系统php版/index.html">php版</a></li>
+    </ul>
+</div>
+
+<div id="main">
+    <h2 class="top_title">jQuery实现的大转盘抽奖 <span>还有3次</span></h2>
+
+    <div class="msg"></div>
+    <input type="button" class="btn" id="btn-start" value="开始抽奖"/>
+    <input type="button" class="btn" id="btn" value="再来一次" disabled/>
+    <span class="prize-box">你获:<span class="prize"> </span></span>
+
+    <div class="demo">
+        <div id="disk"></div>
+        <div id="start"><img src="start.png" id="startbtn"></div>
+    </div>
+
+</div>
+
+<div id="footer">
+</div>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="jquery.easing.min.js"></script>
+<script type="text/javascript" src="./js/index.js">
+</script>
+</body>
+</html>

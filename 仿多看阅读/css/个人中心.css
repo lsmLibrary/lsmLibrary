@@ -1,0 +1,286 @@
+* {
+    padding:0;
+    margin: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+ul {
+    list-style: none;
+}
+u {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+button ,input {
+    outline: none;
+}
+body {
+    background-color: #FAF9F6;
+}
+.w {
+    width: 1190px;
+    margin: auto;
+}
+.header .w{
+    background-color: #FAF9F6;
+    border-bottom: 1px solid #CFCFCF;
+    height: 22px;
+}
+.header li {
+    height: 22px;
+}
+.header li a{
+    font: 400 12px/12px "SimSun";
+    padding: 0 10px;
+    border-right: 1px solid #808087;
+    text-align: center;
+    color: #7C7979;
+}
+.header ul li:last-of-type a{
+    border-right: 0 ;
+}
+.logo-nav {
+    margin: 20px 0 16px;
+    height: 45px;
+}
+.logo-nav .nav {
+    border: 2px solid #EC6F26;
+    border-radius: 4px;
+    width: 296px;
+    overflow: hidden;
+}
+.logo-nav input {
+    height: 31px;
+    width: 257px;
+    line-height: 14px;
+    border: 0;
+
+}
+.logo-nav button {
+    height: 31px;
+    border: 0 solid;
+    background-color: #fff;
+    cursor: pointer;
+}
+.nav .w{
+    height: 46px;
+    background-color: #EC6F26;
+}
+.nav ul {
+    width: 600px;
+    margin: 0 auto;
+}
+.nav li {
+    float: left;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+.nav li:hover {
+    background-color: #E15B1A;
+}
+.nav li a{
+    font: 400 18px/18px "SimSun";
+    color: white;
+}
+.per-cent .per-nav h2 {
+    height: 56px;
+    width: 236px;
+    font: 700 22px/56px "Microsoft YaHei";
+    color: #6D6D6D;
+}
+.per-cent .per-nav li {
+    padding-left: 16px;
+    width: 220px;
+    height: 42px;
+    font: 600 15px/42px "Microsoft YaHei";
+    position: relative;
+}
+.per-cent .per-nav li a{
+    display: block;
+    width: 220px;
+    color:#000000 ;
+}
+.per-cent .per-nav li:first-of-type,
+.per-cent .per-nav li:hover{
+    background-color: #F1EFEB;
+}
+.per-cent .per-nav li span
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+    width: 4px;
+    background-color: red;
+    display: none;
+}
+.per-cent .per-nav li:first-of-type span {
+    display: block;
+}
+.per-cent .per-nav li span u
+{
+    width: 4px;
+    height: 42px;
+    background: url("../image/sprite.png") no-repeat -221px -148px;
+}
+.per-cent .acco-Set,
+.per-cent .balan,
+.per-cent .indent {
+    width: 920px;
+    padding-top: 24px;
+    display: none;
+    padding-left: 31px;
+    border-left: 1px solid #D3D3D3;
+    /*background-color: #fff;*/
+}
+.per-cent .acco-Set {
+    display: block;
+}
+.per-cent .acco-Set h3,
+.per-cent .balan h3,
+.per-cent .indent h3 {
+    margin-bottom: 22px;
+    width: 100%;
+    font: 600 17px/38px "Microsoft YaHei";
+    border-bottom: 1px solid #D3D3D3 ;
+}
+.per-cent .acco-Set p,
+.per-cent .balan p {
+    margin:10px 0 10px 74px;
+}
+.per-cent .acco-Set p span,
+.per-cent .balan p span {
+    display:inline-block;
+    width: 72px;
+    height: 32px;
+    margin-right: 30px;
+    font: 400 14px/32px "Microsoft YaHei";
+    text-align: right;
+}
+.per-cent .acco-Set p input,
+.per-cent .balan p input {
+    width: 226px;
+    height: 34px;
+    padding-left: 10px;
+    font: 400 14px/34px "Microsoft YaHei";
+    border-radius: 6px;
+    border: 1px solid #C1C1C1;
+}
+.per-cent .acco-Set button,
+.per-cent .balan button {
+    width: 82px;
+    height: 34px;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    background-color: #2265AA;
+    margin-left: 102px;
+}
+/*.per-cent .indent {*/
+    /*display: block;*/
+/*}*/
+.per-cent .balan .money{
+    font: 600 29px/29px "Microsoft YaHei";
+    color: #DF8D3B;
+    margin-bottom: 56px;
+}
+.per-cent .indent .shopping li {
+    width: 890px;
+    /*height: 160px;*/
+    overflow: hidden;
+    border: 1px solid #D5D5D5;
+    border-bottom: 0;
+    margin: 10px;
+    background-color: #fff;
+}
+.per-cent .indent .shopping li h3 {
+    padding-left: 17px;
+    font: 600 16px/40px "Microsoft YaHei";
+    border-bottom: 1px solid #D5D5D5;
+    background-color: #F2F2F2;
+    color: #6D6D6D;
+}
+.per-cent .indent .shopping li h3 span {
+    color: black;
+}
+.per-cent .indent .shopping li .show {
+    padding: 16px 31px;
+    height: 90px;
+    border-bottom: 1px solid #D5D5D5;
+}
+.per-cent .indent .shopping li .show .book {
+    height: 75px;
+    width: 440px;
+}
+.per-cent .indent .shopping li .show .book img
+{
+    float: left;
+    width: 64px;
+    height: 86px;
+    margin-right: 14px;
+}
+.per-cent .indent .shopping li .show .book h4{
+    /*float: left;*/
+    font: 600 15px/22px "Microsoft YaHei";
+}
+.per-cent .indent .shopping li .show .book p {
+    font: 400 14px/22px "Microsoft YaHei";
+    height: 44px;
+}
+.per-cent .indent .shopping li .show .book span {
+    font: 400 14px/22px "Microsoft YaHei";
+    color: #6D6D6D;
+}
+.per-cent .indent .shopping li .show .number {
+    padding-left: 10px;
+    position: relative;
+    /*width: 412px;*/
+}
+.per-cent .indent .shopping li .show .number p {
+    font: 400 16px/30px "Microsoft YaHei";
+}
+.per-cent .indent .shopping li .show .number p a{
+    margin-left: 50px;
+    margin-right: 100px;
+    color: black;
+}
+.per-cent .indent .shopping li .show .number .buy {
+    width: 112px;
+}
+.per-cent .indent .shopping li .show .number .buy p {
+    border-bottom: 1px solid #D3D3D3;
+    font: 400 14px/22px "Microsoft YaHei";
+    text-align: center;
+}
+.per-cent .indent .shopping li .show .number .buy button {
+    height: 34px;
+    width: 82px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 0;
+    text-align: right;
+}
+.per-cent .indent .shopping li .show .number>span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: -34px;
+    cursor: pointer;
+}
+.per-cent .indent .shopping li .show .number>span u {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../image/sprite.png") no-repeat -198px -12px;
+}
+.per-cent .money {
+
+}

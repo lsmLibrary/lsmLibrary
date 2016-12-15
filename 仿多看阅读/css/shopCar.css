@@ -1,0 +1,219 @@
+* {
+    padding:0;
+    margin: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+ul {
+    list-style: none;
+}
+u {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+button ,input {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+body {
+    background-color: #FAF9F6;
+}
+.w {
+    width: 1190px;
+    margin: auto;
+}
+.header .w{
+    background-color: #FAF9F6;
+    border-bottom: 1px solid #CFCFCF;
+    height: 22px;
+}
+.header li {
+    height: 22px;
+}
+.header li a{
+    font: 400 12px/12px "SimSun";
+    padding: 0 10px;
+    border-right: 1px solid #808087;
+    text-align: center;
+    color: #7C7979;
+}
+.header ul li:last-of-type a{
+    border-right: 0 ;
+}
+.logo-nav {
+    margin: 20px 0 16px;
+    height: 45px;
+}
+.logo-nav .nav {
+    border: 2px solid #EC6F26;
+    border-radius: 4px;
+    width: 296px;
+    overflow: hidden;
+}
+.logo-nav input {
+    height: 31px;
+    width: 257px;
+    line-height: 14px;
+    border: 0;
+
+}
+.logo-nav button {
+    height: 31px;
+    border: 0 solid;
+    background-color: #fff;
+    cursor: pointer;
+}
+.nav .w{
+    height: 46px;
+    background-color: #EC6F26;
+}
+.nav ul {
+    width: 600px;
+    margin: 0 auto;
+}
+.nav li {
+    float: left;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+.nav li:hover {
+    background-color: #E15B1A;
+}
+.nav li a{
+    font: 400 18px/18px "SimSun";
+    color: white;
+}
+.shopC>p {
+    font: 400 16px/22px "Microsoft YaHei";
+}
+.shopC>p span{
+    color: #C1C1C1;
+}
+.shopC .shopping {
+    width: 959px;
+    margin: 21px auto;
+    border: 1px solid #F9E7BF;
+    background-color: #fff;
+}
+.shopC .shopping h2 {
+    font: 600 16px/38px "Microsoft YaHei";
+    padding-left: 16px;
+    background-color: #FCF7DB;
+    border-bottom: 1px solid #F9E7BF;
+}
+.shopC .shopping ul{
+    padding: 6px;
+}
+.shopC .shopping li {
+    width: 925px;
+    /*height: 160px;*/
+    overflow: hidden;
+    border: 1px solid #D5D5D5;
+    border-bottom: 0;
+    margin: 10px;
+}
+.shopC .shopping li h3 {
+    padding-left: 17px;
+    font: 600 16px/40px "Microsoft YaHei";
+    border-bottom: 1px solid #D5D5D5;
+    background-color: #F2F2F2;
+}
+.shopC .shopping li .show {
+    padding: 16px 31px;
+    height: 90px;
+    border-bottom: 1px solid #D5D5D5;
+}
+.shopC .shopping li .show .book {
+    height: 75px;
+    width: 440px;
+}
+.shopC .shopping li .show .book img
+{
+    float: left;
+    width: 64px;
+    height: 86px;
+    margin-right: 14px;
+}
+.shopC .shopping li .show .book h4{
+    /*float: left;*/
+    font: 600 14px/22px "Microsoft YaHei";
+}
+.shopC .shopping li .show .book p {
+    font: 400 14px/22px "Microsoft YaHei";
+    height: 44px;
+}
+.shopC .shopping li .show .book span {
+    font: 400 14px/22px "Microsoft YaHei";
+    color: #6D6D6D;
+}
+.shopC .shopping li .show .number {
+    padding-left: 10px;
+    position: relative;
+    /*width: 412px;*/
+}
+.shopC .shopping li .show .number>p {
+    font: 400 16px/34px "Microsoft YaHei";
+    margin-bottom: 16px;
+}
+.shopC .shopping li .show .number span button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #C1C1C1;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+.shopC .shopping li .show .number input {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #C1C1C1;
+    border-radius: 4px;
+    text-align: center;
+}
+.shopC .shopping li .show .number p>button{
+    height: 34px;
+    width: 82px;
+    background-color: #48B2D7;
+    border-radius: 4px;
+    border: 1px solid #48B2D7;
+    margin-left: 88px;
+    margin-right: 48px;
+}
+.shopC .shopping li .show .number>span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.shopC .shopping li .show .number>span u {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../image/sprite.png") no-repeat -198px -12px;
+}
+.shopC .shopping li .show .number .buy {
+    margin-left: 88px;
+    margin-right: 48px;
+}
+.shopC .shopping li .show .number .buy p {
+    border-bottom: 1px solid #D3D3D3;
+    font: 400 14px/22px "Microsoft YaHei";
+}
+.shopC .shopping li .show .number .buy button {
+    height: 34px;
+    width: 82px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 0;
+}
+

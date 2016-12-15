@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            width: 600%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .img {
+            width: 702px;
+            height: 240px;
+            overflow: hidden;
+            margin: 100px auto;
+            position: relative;
+        }
+        .img li {
+            float: left;
+            width: 702px;
+        }
+    </style>
+    <script src="jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div class="img">
+    <ul>
+        <li class="fl"><a href=""><img src="image/scr1.jpg" alt=""/></a></li>
+        <li class="fl"><a href=""><img src="image/scr2.jpg" alt=""/></a></li>
+        <li class="fl"><a href=""><img src="image/scr3.jpg" alt=""/></a></li>
+        <li class="fl"><a href=""><img src="image/scr4.jpg" alt=""/></a></li>
+        <li class="fl"><a href=""><img src="image/scr5.jpg" alt=""/></a></li>
+        <li class="fl"><a href=""><img src="image/scr1.jpg" alt=""/></a></li>
+    </ul>
+</div>
+<script>
+    var imgUl = $(".img ul");
+    imgLeft = imgUl.position().left;
+    var t=setInterval(function () {
+        imgLeft -= 1;
+        imgUl.css("left",imgLeft+"px");
+//        console.log(imgLeft);
+        if (imgLeft <= -702*5) {
+            console.log(1);
+            imgLeft = 0
+        }
+    },10);
+    function stop() {
+        console.log(1);
+        clearInterval(t)
+    }
+    $(".img").mouseenter(function () {
+        imgLeft = imgUl.position().left;
+        n = (702+(imgLeft%702));
+        console.log(n);
+        setTimeout(stop,n*10)
+    });
+
+</script>
+</body>
+</html>

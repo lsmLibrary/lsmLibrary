@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Webming</title>
+    <link rel="icon" type="image/png" href="indexStyle/images/favicon.png"/>
+    <!--<link rel="stylesheet" type="text/css"-->
+          <!--href="http://fonts.googleapis.com/css?family=Merriweather:400,700,300,300italic,900|Open+Sans:300italic,400italic,400,300,700)">-->
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1470554103_8496597.css">
+    <link rel="stylesheet" type="text/css" href="indexStyle/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="indexStyle/css/common.css">
+    <link rel="stylesheet" type="text/css" href="indexStyle/css/main.css">
+    <link rel="stylesheet" type="text/css" href="indexStyle/css/wodry.css">
+    <script src="indexStyle/js/scripts/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".top_ul li").mouseover(function () {
+                $(this).children("div").addClass("selected");
+            });
+            $(".top_ul li").mouseout(function () {
+                $(this).children("div").removeClass("selected");
+            });
+        });
+    </script>
+</head>
+<body>
+<header class="siteTop-wrapper" id="top-js">
+    <nav class="clearfix">
+        <ul class="top_ul">
+            <li style="">
+                <a href="网页简历/aresume.html" title="lsm">Resume</a>
+
+                <div style="">
+                    <a href="网页简历/aresume.html">个人简历</a>
+                    <img src="indexStyle/images/k2.jpg" alt=""/>
+                </div>
+            </li>
+
+            <li>
+                <a href="https://github.com/lsmLibrary" target="_blank" >GitHub Source</a>
+
+                <div class="">
+                    <a href="https://github.com/lsmLibrary" target="_blank">GitHub 项目资源</a>
+                    <img src="indexStyle/images/k2.jpg" alt=""/>
+                </div>
+            </li>
+
+            <li class="last">
+                <a href="#" title="Contact">WebWorld</a>
+                <div style="">
+                    <a href="#">与我联系</a>
+                    <img src="indexStyle/images/k2.jpg" alt=""/>
+                </div>
+            </li>
+        </ul>
+        <div class="control">
+            <a href="#" target="_blank" class="logo buzz-out"><h1>sun</h1></a>
+            <a id="nav-toggle" href="#"><span></span></a>
+        </div>
+    </nav>
+</header>
+
+<div class="siteHome-wrapper">
+    <div style="position: relative;">
+        <ul id="Change">
+            <li><img src="indexStyle/images/banner-desktop.jpg" alt=""/></li>
+            <li><img src="indexStyle/images/banner-working.jpg" alt=""/></li>
+            <div class="hero">
+                <div class="wrapper clearfix">
+                    <article class="message">
+                        <h1>Question Solving<br>In
+			      <span class="flipup">
+			          <span class="wodryRX">
+			               HTML|CSS|javascript|jQuery|bootstraps
+			          </span>
+			      </span>
+                        </h1>
+
+                        <p>
+                            <small class="name">李势明 | Web前端开发</small>
+                            <br/></p>
+                        <a class="btn" href="#modal">Nothing is impossible for a willing heart.</a>
+                    </article>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <section class="projects" id="project">
+        <div class="wrapper clearfix">
+            <h2 class="ribbon">
+                <span class="ribbon-content">Recent Projects</span>
+            </h2>
+            <article>
+                <a href="打飞机小游戏/打飞机1.0.html" target="_blank">
+                    <img src="./indexStyle/images/planeGame.jpg">
+
+                    <h3>仿微信打飞机游戏</h3>
+
+                    <p>经典打飞机游戏,面对对象为指导,代码清晰</p>
+                </a>
+            </article>
+            <article>
+                <a href="./仿多看阅读/index.html" target="_blank">
+                    <img src="./indexStyle/images/duokan.jpg">
+
+                    <h3>仿多看阅读</h3>
+
+                    <p>HTML+CSS+JavaScript，还原包括首页,登陆,购物车,个人中心等页面样式以及特效,</p>
+                </a>
+            </article>
+            <article>
+                <a href="./豆瓣电影/index.html" target="_blank">
+                    <img src="./indexStyle/images/dbapi.jpg">
+
+                    <h3>豆瓣电影</h3>
+
+                    <p>Angularjs、Bootstrap框架,MVC架构模式,API请求数据即时更新豆瓣电影详情,实现跨域请求数据</p>
+                </a>
+            </article>
+            <article>
+                <a href="./抽奖系统php版/index.html" target="_blank">
+                    <img src="./indexStyle/images/抽奖.jpg">
+
+                    <h3>转盘抽奖</h3>
+
+                    <p>1.使用jQuery,本地json数据,利用随机数再通过简单算法判断中奖情况;<br/>
+                        2.利用Ajax异步请求,在php进行判断中间情况</p>
+                </a>
+            </article>
+            <article>
+                <a href="瀑布流/瀑布流.html" target="_blank">
+                    <img src="indexStyle/images/pbl.jpg">
+
+                    <h3>js实现瀑布流</h3>
+
+                    <p>使用js模拟数据瀑布流加载</p>
+                </a>
+            </article>
+            <article>
+                <a href="./星星/starGirl.html" target="_blank">
+                    <img src="indexStyle/images/star.jpg">
+
+                    <h3>html5的canves动画效果</h3>
+
+                    <p>使用canves搭建界面,里用构造函数创建星星的类,实现鼠标进入图片星星在图片上移动</p>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section class="bio">
+        <div class="wrapper">
+            <article>
+                <div class="bio-content">
+                    <h2>About me</h2>
+                    <p>
+                        经常去IT论坛、阅读,关注前端技术大牛博客、公众号并善于从中学习;乐观开朗有上进心，能承受一定的工作压力；追求完美，以极客为目标；对开发开发有热情，喜欢自己写一些demo,喜欢遇到问题自己想办法解决后的成就感；喜欢接触新的事物，学习就是遇到问题到解决问题的过程。</p>
+                    <a class="btn" href="网页简历/aresume.html" target="_blank">Get the full story</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="skillSet">
+        <div class="wrapper">
+            <div class="skillSet-inner clearfix">
+                <h2 class="ribbon">
+                    <span class="ribbon-content">My skills</span>
+                </h2>
+                <article class="skill">
+                    <h3>HTML & CSS</h3>
+
+                    <p>熟悉HTML+CSS布局，遵循W3C规范，善于编写有语义化、模块化、易于维护的页面代码</p>
+                </article>
+                <article class="skill">
+                    <h3>javaScript</h3>
+
+                    <p>熟悉JavaScript、Ajax工作原理和实现方法，实现大部分动画效果;</p>
+                </article>
+                <article class="skill">
+                    <h3>jQuery</h3>
+
+                    <p>熟悉jQuery工具库，实现日常交互效果。了解Bootsrap等常见前端框架,实现响应式布局</p>
+                </article>
+                <article class="skill">
+                    <h3>php</h3>
+                    <p>了解PHP语言,如对象的创建,利用PHP对MySQL数据库进行增删改查操作</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="latest">
+        <div class="wrapper clearfix">
+            <article class="blo">
+                <div class="latest-content">
+                    <h2>bilibili按钮</h2>
+                    <a class=btn href="哔哩哔哩菜单按钮/index.html" target="_blank">demo show</a>
+                </div>
+            </article>
+            <article class="foundry">
+                <div class="latest-content">
+                    <h2>3D照片墙</h2>
+                    <a class=btn href="3d照片墙/3d-poto.html" target="_blank">demo show</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="soc clearfix">
+                <a class="github" target="_blank" href="https://github.com/lsmLibrary">
+                    <span class="per-iconfont icon-github"></span>
+                </a>
+            </div>
+            <small>
+                © copyright 李势明 2016 &nbsp;-&nbsp;
+                <a href="https://github.com/1937abcd" target="_blank">Open source: GitHub </a>
+            </small>
+        </div>
+    </footer>
+    <div class="sub-footer tooltip-top" data-tooltip="Back to the Top">
+        <a href="#" class="back-to-top gotop-js">Back to top</a>
+        <span class="tip">Back To The Top</span>
+    </div>
+</div>
+
+
+<div class="modal-dialog" id="modal">
+    <div class="cover"></div>
+    <div class="modal-content">
+        <div class="modal-head">
+            <div class="close"></div>
+            <h2 class="ribbon">
+                <span class="ribbon-content">Contact Me</span>
+            </h2>
+            <img src="http://www.jesseshowalter.com/assets/images/icon-email.svg" alt="">
+        </div>
+        <div class="form-content">
+            <form action="">
+                <ul>
+                    <li class=heighterror>
+                        <lable class=title for=name>姓名</lable>
+                        <div>
+                            <input type="text" class="panel" id=name name=name placeholder="只能是字母、数字、下划线，3-10个字符">
+                        </div>
+                        <p class="error">不能为空</p>
+                    </li>
+                    <li>
+                        <lable class=title for=name>邮箱</lable>
+                        <div>
+                            <input type="password" class="panel" id=password name="password"
+                                   placeholder="XXXX@XX.com">
+                        </div>
+                        <p class="error">邮箱格式不正确</p>
+                    </li>
+                    <li>
+                        <lable class=title for=conment>留言</lable>
+                        <div>
+                            <textarea name="conment" class="panel" id="conment" cols="30" rows="10" hidden ></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="submit" class=formbtn value="SUBMIT">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="indexStyle/js/wodry.js"></script>
+<script src="indexStyle/js/main.js"></script>
+
+<script>
+    $(function () {
+        var liItems = $("#Change").children();
+        var liLen = liItems.length;
+        var count = 0;
+        var Atimer = null;
+
+//          定义图片切换函数(即改变透明度)
+        function showImages(index) {
+            for (var i = 0; i < liLen - 1; i++) {
+                liItems[i].style.zIndex = 100 - i;
+                liItems[i].style.opacity = '0';
+            }
+            liItems[index].style.zIndex = 100;
+            liItems[index].style.opacity = '1';
+        }
+
+        showImages(0);
+//          定义自动轮播函数
+        function autoplay() {
+            if (count % 2 == 0) {
+                count = 0;
+            }
+            showImages(count);
+            count++;
+        }
+
+        Atimer = setInterval(autoplay, 3000);
+    })
+</script>
+<script>
+    $.goNavShow($('#top-js'));
+    /*------文字翻转------*/
+    $('.wodryRX').wodry({
+        animation: 'rotateYX',
+        delay: 1500,
+        animationDuration: 800
+    });
+</script>
+</body>
+</html>
